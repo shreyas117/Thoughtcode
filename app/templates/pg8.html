@@ -1,0 +1,252 @@
+{% set i=0 %}
+<!DOCTYPE html>
+<head>
+    <meta charset="utf -8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+        <style>
+            * {
+                
+                    margin:0;
+
+                    padding:0;
+
+                    -webkit-box-sizing: border-box;
+
+                    -moz-box-sizing: border-box;
+
+                    box-sizing: border-box;
+
+                    font-family: Palatino, "Palatino LT STD", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+            }
+            
+            body{
+                 -webkit-background-size:cover;
+
+                    background-position:center center;
+
+                    height:100vh;
+
+                    background:rgba(0,0,1,0.08);
+
+                    background-size:cover;
+                
+            }
+            
+            header{
+                
+                    text-decoration:none;
+
+                    color:#fff;
+
+                    letter-spacing:1px;
+
+                   
+
+                    display:block;
+
+                    margin-top: 8px;
+                margin-bottom: 10px;
+
+                    font-size:25px;
+
+                    height: 50px;
+
+                    position: relative;
+        
+                   
+                    z-index: 1;
+                text-align: center;
+                background-color: rgba(0,0,0,0.8);
+                word-spacing: 8px;
+                font-family: oblique;
+                font-variant: small-caps;
+
+            }
+            
+            header b{
+                font-size: 32px;
+               
+            }
+            header a{
+                color: beige;
+            }
+            article{
+             
+                    font-size:20px;
+
+                    padding:0 50px;
+               
+
+            }
+            li{
+              margin-left: 20px;
+                padding-top: 10px;
+                  font-size:20px;
+                word-spacing: 6px;
+                margin-bottom: 6px;
+            }
+            ul{
+                margin-left: 25px;
+                
+            }
+             b{
+                font-display: block;
+                font-size: 22px;
+            }
+            
+            footer{
+                 
+                    text-decoration:none;
+
+                    color:#fff;
+
+                    letter-spacing:1px;
+
+                    text-transform: uppercase;
+
+                    display:block;
+
+                   height: 44px;
+
+                    font-size:17px;
+
+                    line-height:30px;
+
+                    position: relative;
+
+                    z-index: 1;
+               
+                background-color: rgba(0,0,0,0.8);
+                margin-bottom: 8px;
+
+               
+            }
+            p{
+                font-size:20px;
+                word-spacing: 6px;
+
+                   
+
+            }
+            section{
+                background-color:lightgray;
+                
+            }
+            
+            button{
+                border: none;
+                color: aliceblue;
+                background-color: rgba(0,0,0,0.1);
+                margin-top: 4px;
+                
+                
+            }
+            a{
+                margin-right: 10px;
+                margin-top:5px
+            }
+            button:hover{
+                 background:rgba(0,0,0,1);
+
+                    color:#fff;
+
+            }
+            
+        </style>
+</head>
+<body>
+    <header>
+        <b>{{p['l'][i]}}{% set i=i+1 %}</b><a href="/profile8" style="color:blueviolet; text-decoration: none;float: right">{{ username }}</a>
+    </header>
+<article>
+
+<p>{{p['l'][i]}}{% set i=i+1 %}</p>
+
+<section>
+&nbsp;&nbsp;#include<iostream> <br>
+&nbsp;&nbsp;using namespace std;  <br> <br>
+  
+&nbsp;&nbsp;int main() <br>
+&nbsp;&nbsp;{ <br>
+  &nbsp;&nbsp;int x = 10; <br> <br>
+  
+ &nbsp;&nbsp; // ref is a reference to x. <br>
+  &nbsp;&nbsp;int& ref = x; <br> <br>
+  
+  &nbsp;&nbsp;// Value of x is now changed to 20 <br>
+  &nbsp;&nbsp;ref = 20; <br> 
+ &nbsp;&nbsp;cout << "x = " << x << endl ; <br> <br>
+  
+  &nbsp;&nbsp;// Value of x is now changed to 30  <br>
+ &nbsp;&nbsp;x = 30; <br>
+ &nbsp;&nbsp; cout << "ref = " << ref << endl ; <br> <br>
+  
+  &nbsp;&nbsp;return 0; <br>
+&nbsp;&nbsp;} <br>
+
+</section>
+
+
+<br><strong>{{p['l'][i]}}{% set i=i+1 %}</strong><br>
+<pre> x = 20
+ref = 30
+</pre>
+{{p['l'][i]}}{% set i=i+1 %}<br><br>
+<section>
+&nbsp;&nbsp;#include<iostream><br>
+&nbsp;&nbsp;using namespace std;<br><br>
+  
+&nbsp;&nbsp;void swap (int& first, int& second)<br>
+&nbsp;&nbsp;{<br>
+   &nbsp;&nbsp; int temp = first;<br>
+   &nbsp;&nbsp; first = second;<br>
+    &nbsp;&nbsp;second = temp;<br>
+&nbsp;&nbsp;}<br><br>
+  
+&nbsp;&nbsp;int main()<br>
+&nbsp;&nbsp;{<br>
+   &nbsp;&nbsp; int a = 2, b = 3;<br>
+    &nbsp;&nbsp;swap( a, b );<br>
+   &nbsp;&nbsp; cout << a << " " << b;<br>
+   &nbsp;&nbsp; return 0;<br>
+&nbsp;&nbsp;}<br>
+</section>
+
+
+
+
+
+
+
+<br><strong>{{p['l'][i]}}{% set i=i+1 %}</strong><br>
+<pre>{{p['l'][i]}}{% set i=i+1 %}</pre>
+<p></br><br />
+<strong>{{p['l'][i]}}{% set i=i+1 %}</strong><br />
+{{p['l'][i]}}{% set i=i+1 %}<br />
+{{p['l'][i]}}{% set i=i+1 %}</p><br/>
+       
+<p><em>{{p['l'][i]}}{% set i=i+1 %}</em><br />
+<ol>
+<li>{{p['l'][i]}}{% set i=i+1 %}</li>
+<li>{{p['l'][i]}}{% set i=i+1 %}</li>
+<li>{{p['l'][i]}}{% set i=i+1 %}</li>
+
+<p><em>{{p['l'][i]}}{% set i=i+1 %}</em><br />
+<li>{{p['l'][i]}}{% set i=i+1 %}</li>
+</ol>
+</article>
+<br>
+    <a href="https://www.onlinegdb.com/" target="_blank" style="text-decoration :none;float: right;font-size: 25px">Try it out</a><br><br>
+    
+    <footer>
+    
+            <form action="/pg8">
+            <button type="submit" style="float: right;font-size: 20px; height: 30px;margin-right: 10px">Next Page</button>
+            </form>
+
+            <form action="/pg8p">
+            <button type="submit" style="float: left;font-size: 20px; height: 30px;margin-left: 10px">Previous Page</button>
+            </form>
+        </footer>
+    </body>
+    </html>

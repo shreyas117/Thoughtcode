@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf -8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+        <style>
+            * {
+                
+                    margin:0;
+
+                    padding:0;
+
+                    -webkit-box-sizing: border-box;
+
+                    -moz-box-sizing: border-box;
+
+                    box-sizing: border-box;
+
+                    font-family: Palatino, "Palatino LT STD", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+            }
+            
+            body{
+                 -webkit-background-size:cover;
+
+                    background-position:center center;
+
+                    height:100vh;
+
+                    background:rgba(0,0,1,0.08);
+
+                    background-size:cover;
+                
+            }
+            
+            header{
+                
+                    text-decoration:none;
+
+                    color:#fff;
+
+                    letter-spacing:1px;
+
+                   
+
+                    display:block;
+
+                    margin-top: 8px;
+                margin-bottom: 10px;
+
+                    font-size:25px;
+
+                    height: 50px;
+
+                    position: relative;
+        
+                   
+                    z-index: 1;
+                text-align: center;
+                background-color: rgba(0,0,0,0.8);
+                word-spacing: 8px;
+                font-family: oblique;
+                font-variant: small-caps;
+
+            }
+            section{
+                background-color:lightgray;
+                
+            }
+            
+            header b{
+                font-size: 32px;
+               
+            }
+            header a{
+                color: beige;
+            }
+            article{
+             
+                    font-size:20px;
+
+                    padding:0 50px;
+               
+
+            }
+            li{
+              margin-left: 20px;
+                padding-top: 10px;
+                  font-size:20px;
+                word-spacing: 6px;
+                margin-bottom: 6px;
+            }
+            ul{
+                margin-left: 25px;
+                
+            }
+             b{
+                font-display: block;
+                font-size: 22px;
+            }
+            
+            footer{
+                 text-align: center;
+                    text-decoration:none;
+
+                    color:#fff;
+
+                    letter-spacing:1px;
+
+                    text-transform: uppercase;
+
+                    display:block;
+
+                   height: 44px;
+
+                    font-size:17px;
+
+                    line-height:30px;
+
+                    position: relative;
+
+                    z-index: 1;
+               
+                background-color: rgba(0,0,0,0.9);
+                margin-bottom: 8px;
+
+               
+            }
+            p{
+                font-size:16px;
+                word-spacing: 6px;
+
+                   
+
+            }
+            button{
+                border: none;
+                color: aliceblue;
+                background-color:rgba(0,0,0,0.2) ;
+                margin-top: 4px;
+                
+                
+            }
+            button:hover{
+                 background:tomato;
+
+                    color:#fff;
+
+            }
+            div{
+                margin-left: 15px;
+                font-size: 20px;
+            }
+            
+        </style>
+</head>
+<body>
+<header>
+        <b>Final Quiz</b>
+    </header>
+<form action="/checkfqz" method="POST">
+        <p><b>1) The operator used to access member function of a structure using its object.</b><br><br>
+            <div>
+        .
+        <input type="radio" name="1" value="1" ><br><br>
+        ->
+        <input type="radio" name="1" value="2" ><br><br>
+        *
+        <input type="radio" name="1" value="3"><br>
+    </div>
+        </p>
+        <p><b>2)  A for loop is also known as a _____ loop.</b><br><br>
+            <div>
+            Decrementing
+            <input type="radio" name="2" value="1"><br><br>
+            Incrementing
+            <input type="radio" name="2" value="2"><br><br>
+            Counting
+            <input type="radio" name="2" value="3"><br>
+        </div>
+            </p>
+            <p><b>3) Which of the following function prototype is perfectly acceptable?</b><br><br>
+                <div>
+                float Function(int Tmp = Show(int, float));
+                <input type="radio" name="3" value="1"><br><br>
+                int Function(int Tmp = Show());
+                <input type="radio" name="3" value="2"><br><br>
+                Both are allowed
+                <input type="radio" name="3" value="3"><br>
+            </div>
+                </p>   
+                <p><b>4) Which of the following statement is correct?</b><br><br>
+                    <div>
+                    C++ enables to define functions that take constants as an argument.
+                    <input type="radio" name="4" value="1"><br><br>
+                    We cannot change the argument of the function that that are declared as constant.
+                    <input type="radio" name="4" value="2"><br><br>
+                    Both A and B.
+                    <input type="radio" name="4" value="3"><br>
+                </div>
+                    </p>
+                    <p><b>5) Which of the following statement will be correct if the function has three arguments passed to it?</b><br><br>
+                        <div>
+                        The trailing argument will be the default argument.
+                        <input type="radio" name="5" value="1"><br><br>
+                        The first argument will be the default argument.
+                        <input type="radio" name="5" value="2"><br><br>
+                        All the argument will be the default argument.
+                        <input type="radio" name="5" value="3"><br>
+                    </div>
+                        </p>
+                        <p><b>6) Which of the following statement is incorrect?</b><br><br>
+                            <div>
+                            Default arguments can be provided for pointers to functions.
+                            <input type="radio" name="6" value="1"><br><br>
+                            A function can have all its arguments as default.
+                            <input type="radio" name="6" value="2"><br><br>
+                            Default argument cannot be provided for pointers to functions.
+                            <input type="radio" name="6" value="3"><br>
+                        </div>
+                            </p>
+                            <p><b>7) Which of the following function declaration is incorrect?</b><br><br>
+                                <div>
+                                int Sum(int a, int b = 2, int c = 3);
+                                <input type="radio" name="7" value="1"><br><br>
+                                int Sum(int a = 0, int b, int c = 3);
+                                <input type="radio" name="7" value="2"><br><br>
+                                int Sum(int a, int b, int c = 3);
+                                <input type="radio" name="7" value="3"><br>
+                            </div>
+                                </p>
+
+                                <p><b>8) Which of the following accesses the seventh element stored in array? </b><br><br>
+                                    <div>
+                                    array[6]; 
+                                    <input type="radio" name="8" value="1"><br><br>
+                                    array[7]; 
+                                    <input type="radio" name="8" value="2"><br><br>
+                                    array; 
+                                    <input type="radio" name="8" value="3"><br>
+                                </div>
+                                    </p>
+
+                                    <p><b>9)  Where does a cin stops it extraction of data? </b><br><br>
+                                        <div>
+                                        By seeing () 
+                                        <input type="radio" name="9" value="1"><br><br>
+                                        By seeing ;
+                                        <input type="radio" name="9" value="2"><br><br>
+                                        By seeing a blankspace 
+                                        <input type="radio" name="9" value="3"><br>
+                                        </div>
+                                        </p>
+
+                                        <p><b>10) What is the output of this program?<br><br>
+                                            <div>
+                                            #include < iostream ><br>
+                                            using namespace std;<br>
+                                            int main ()<br>
+                                            {<br><br>
+                                            int i;<br>
+                                            cout << "Please enter an integer value: ";<br>
+                                            cin >> i + 4;<br>
+                                            return 0;<br><br>
+                                            }
+                                        </div></b><br>
+                                        <div>
+
+                                            your value + 4 
+                                            <input type="radio" name="10" value="1"><br><br>
+                                            Error 
+                                            <input type="radio" name="10" value="2"><br><br>
+                                            Prints nothing
+                                            <input type="radio" name="10" value="3"><br>
+                                        </div>
+                                            </p>
+
+<br>
+
+
+    
+    
+
+
+
+
+<footer>
+<button style="font-size: 25px;margin-top: 10px" type="submit">Submit</button>
+</footer>
+</form>
+</body>
+</html>

@@ -1,0 +1,303 @@
+{% set i = 0 %}
+<!DOCTYPE html>
+<head>
+    <meta charset="utf -8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+        <style>
+            * {
+                
+                    margin:0;
+
+                    padding:0;
+
+                    -webkit-box-sizing: border-box;
+
+                    -moz-box-sizing: border-box;
+
+                    box-sizing: border-box;
+
+                    font-family: Palatino, "Palatino LT STD", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+            }
+            
+            body{
+                 -webkit-background-size:cover;
+
+                    background-position:center center;
+
+                    height:100vh;
+
+                    background:rgba(0,0,1,0.08);
+
+                    background-size:cover;
+                
+            }
+            
+            header{
+                
+                    text-decoration:none;
+
+                    color:#fff;
+
+                    letter-spacing:1px;
+
+                   
+
+                    display:block;
+
+                    margin-top: 8px;
+                margin-bottom: 10px;
+
+                    font-size:25px;
+
+                    height: 50px;
+
+                    position: relative;
+        
+                   
+                    z-index: 1;
+                text-align: center;
+                background-color: rgba(0,0,0,0.8);
+                word-spacing: 8px;
+                font-family: oblique;
+                font-variant: small-caps;
+
+            }
+            
+            header b{
+                font-size: 32px;
+               
+            }
+            header a{
+                color: beige;
+            }
+            article{
+             
+                    font-size:20px;
+
+                    padding:0 50px;
+               
+
+            }
+            li{
+              margin-left: 20px;
+                padding-top: 10px;
+                  font-size:20px;
+                word-spacing: 6px;
+                margin-bottom: 6px;
+            }
+            ul{
+                margin-left: 25px;
+                
+            }
+             b{
+                font-display: block;
+                font-size: 22px;
+            }
+            
+            footer{
+                 
+                    text-decoration:none;
+
+                    color:#fff;
+
+                    letter-spacing:1px;
+
+                    text-transform: uppercase;
+
+                    display:block;
+
+                   height: 44px;
+
+                    font-size:17px;
+
+                    line-height:30px;
+
+                    position: relative;
+
+                    z-index: 1;
+               
+                background-color: rgba(0,0,0,0.8);
+                margin-bottom: 8px;
+
+               
+            }
+            p{
+                font-size:20px;
+                word-spacing: 6px;
+
+                   
+
+            }
+            section{
+                background-color:lightgray;
+                
+            }
+            
+            button{
+                border: none;
+                color: aliceblue;
+                background-color: rgba(0,0,0,0.1);
+                margin-top: 4px;
+                
+                
+            }
+            a{
+                margin-right: 10px;
+                margin-top:5px
+            }
+            button:hover{
+                 background:rgba(0,0,0,1);
+
+                    color:#fff;
+
+            }
+            
+        </style>
+</head>
+<body>
+    <header>
+        <b>{{ p['l'][i]}}{% set i=i+1 %}+</b><a href="/profile10" style="color:blueviolet; text-decoration: none;float: right">{{ username }}</a>
+    </header>
+<article>
+
+<p>{{ p['l'][i]}}{% set i=i+1 %}</p>
+<pre>
+// General syntax
+<strong>{{ p['l'][i]}}{% set i=i+1 %}</strong>
+
+// An example pointer "ptr" that holds
+// address of an integer variable or holds
+// address of a memory whose value(s) can
+// be accessed as integer values through "ptr"
+<strong>int *ptr;  </strong>
+</pre>
+<p><strong>{{ p['l'][i]}}{% set i=i+1 %}</strong><br />
+{{ p['l'][i]}}{% set i=i+1 %}</p>
+<ul>
+<li>{{ p['l'][i]}}{% set i=i+1 %}<br>
+    <section>
+	#include &lt;stdio.h> <br>
+	  
+	int main()<br>
+	{<br>
+		int x; <br>
+	  
+		// Prints address of x <br><br>
+		printf("%p", &x); <br>
+	  
+		return 0;<br>
+    }<br>
+</section>
+</li>
+<li> {{ p['l'][i]}}{% set i=i+1 %}
+<ul>
+<li>  {{ p['l'][i]}}{% set i=i+1 %}<br><br>
+// C program to demonstrate declaration of <br>
+// pointer variables.<br>
+<section><br>
+]
+#include &lt;stdio.h><br>
+int main()<br>
+{<br>
+    int x = 10;<br>
+    int *ptr;<br>
+    ptr = &x;<br>
+    return 0;<br>
+}<br>
+</section>
+</li>            
+<li>{{ p['l'][i]}}{% set i=i+1 %}<br><br>
+
+// C program to demonstrate use of * for pointers in C  <br>
+<section><br>
+#include &lt;stdio.h><br>
+  
+int main()<br>
+{<br><br>
+    // A normal integer variable<br>
+    int Var = 10;<br><br>
+  
+    // A pointer variable that holds address of var.<br>
+    int *ptr = &Var;<br><br>
+  
+    // This line prints value at address stored in ptr.<br> 
+    printf("Value of Var = %d\n", *ptr);<br><br>
+  
+ 
+    printf("Address of Var = %p\n", ptr);<br>
+  
+    *ptr = 20; // Value at address is now 20<br><br>
+  
+    printf("After doing *ptr = 20, *ptr is %d\n", *ptr);<br>
+  
+    return 0;<br>
+}<br>
+</section>
+<p>{{ p['l'][i]}}{% set i=i+1 %}</p>
+<pre>{{ p['l'][i]}}{% set i=i+1 %}
+</pre>
+<p>Below is pictorial representation of above program:<br />
+<a href="http://cdncontribute.geeksforgeeks.org/wp-content/uploads/pointers-in-c.png"><img src="http://cdncontribute.geeksforgeeks.org/wp-content/uploads/pointers-in-c.png" alt="pointers in c" class="aligncenter size-full wp-image-148135" /></a></li>
+</ul>
+</li>
+</ul>
+<p>&nbsp;</p>
+<p><strong>{{ p['l'][i]}}{% set i=i+1 %}</strong><br />
+{{ p['l'][i]}}{% set i=i+1 %}</p>
+<ul>
+<li>{{ p['l'][i]}}{% set i=i+1 %}</li>
+<li>{{ p['l'][i]}}{% set i=i+1 %}</li>
+<li>{{ p['l'][i]}}{% set i=i+1 %}</li>
+<li>{{ p['l'][i]}}{% set i=i+1 %}</li>
+</ul>
+<p><strong>{{ p['l'][i]}}{% set i=i+1 %}</strong><br />
+{{ p['l'][i]}}{% set i=i+1 %}<br /><br>
+// C++ program to illustrate Array Name as Pointers in C++ <br>
+<section><br>
+&nbsp;&nbsp;#include &lt;iostream><br>
+&nbsp;&nbsp;using namespace std;<br>
+  
+&nbsp;&nbsp;void pointer()<br>
+&nbsp;&nbsp;{<br><br>
+    &nbsp;&nbsp;// Declare an array<br>
+    &nbsp;&nbsp;int val[3] = { 5, 10, 20 };<br><br>
+  
+    &nbsp;&nbsp;// Declare pointer variable<br>
+    &nbsp;&nbsp;int *ptr;<br><br>
+  
+    &nbsp;&nbsp;// Assign address of val[0] to ptr.<br>
+    &nbsp;&nbsp;ptr = val ;<br><br>
+    &nbsp;&nbsp;cout << "Elements of the array are: ";<br>
+    &nbsp;&nbsp;cout << ptr[0] << " " << ptr[1] << " " << ptr[2];<br><br>
+  
+    &nbsp;&nbsp;return;<br>
+&nbsp;&nbsp;}
+</section>
+
+
+
+<pre><strong>
+{{ p['l'][i]}}{% set i=i+1 %}</strong>
+{{ p['l'][i]}}{% set i=i+1 %}
+</pre>
+<p><img src="https://cdncontribute.geeksforgeeks.org/wp-content/uploads/PointersInC.png" alt="Untitled presentation (2)" class="aligncenter size-full wp-image-148224" /><br /></p>
+<p>&nbsp;</p>
+
+</article>
+ <br>
+    <a href="https://www.onlinegdb.com/" target="_blank" style="text-decoration :none;float: right;font-size: 25px">Try it out</a><br><br>
+    
+    <footer>
+        
+            <form action="/pg10">
+            <button type="submit" style="float: right;font-size: 20px; height: 30px;margin-right: 10px">Final Quiz</button>
+            </form>
+
+        
+
+            <form action="/pg10p">
+            <button type="submit" style="float: left;font-size: 20px; height: 30px;margin-left: 10px">Previous Page</button>
+            </form>
+        </footer>
+    </body>
+    </html>

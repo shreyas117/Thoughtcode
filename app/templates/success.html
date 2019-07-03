@@ -1,0 +1,244 @@
+<html>
+
+    <head>
+
+        <title>User Account</title>
+
+        <style type="text/css">
+
+               *
+
+                {
+
+                    margin:0;
+
+                    padding:0;
+
+                    -webkit-box-sizing: border-box;
+
+                    -moz-box-sizing: border-box;
+
+                    box-sizing: border-box;
+
+                    font-family: Palatino, "Palatino LT STD", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+
+                }
+
+                body
+
+                {
+                  
+
+                    -webkit-background-size:cover;
+
+                    background-position:center center;
+
+                    height:100vh;
+
+                    background:rgba(0,0,1,0.08);
+
+                    background-size:cover;
+
+
+
+                }
+
+                .menu-area li a
+
+                {
+
+                    text-decoration:none;
+
+                    color:#fff;
+
+                    letter-spacing:1px;
+
+                    text-transform: uppercase;
+
+                    display:block;
+
+                    padding:0 25px;
+
+                    font-size:17px;
+
+                    line-height:30px;
+
+                    position: relative;
+
+                    z-index: 1;
+
+                }
+
+                .menu-area li
+
+                {
+
+                    list-style:none;
+
+                    display:inline-block;
+
+                }
+
+                .custom-padding
+
+                {
+
+                    padding-top:25px; 
+
+                }
+
+                nav
+
+                {
+
+                    position:relative;
+
+                    padding:10px 20px 10px 10px;
+
+                    text-align:right;
+
+                    z-index:1;
+
+                     background-color:#444;
+
+                    margin:0 auto;
+
+                    width:calc(100% -60px);
+
+                }
+
+                .logo
+
+                {
+
+                    width:30%;
+
+                    float:left;
+
+                    text-transform:uppercase;
+
+                    color:#fff;
+
+                    font-size:22px;
+
+                    text-align:left;
+
+                    padding-left:2%;
+
+                }
+
+                .menu-area li a:hover
+
+                {
+
+                    background:tomato;
+
+                    color:#fff;
+
+                }
+
+                h1
+
+                {
+
+                    margin:20px;
+
+                    text-align:center;
+
+                    font-size:35px;
+
+                }
+                h3
+
+                {
+
+                    margin:20px;
+
+                    text-align:center;
+
+                    font-size:32px;
+
+                }
+            p{
+                      font-size:25px;
+
+                    padding:0 50px;
+
+            }
+
+
+                span
+
+                {
+
+                    font-size:25px;
+
+                    padding:0 50px;
+
+
+
+                }
+
+                .link
+
+                {
+
+                   
+
+                    color:black;
+
+                    font-size:25px;
+
+                    padding:0 50px;
+
+                }
+            
+            .q
+            
+            {
+                text-align: center;    
+            }
+
+            b#q{
+                font-size: 35px;
+            }
+
+                
+
+        </style>
+
+    </head>
+
+    <body>
+
+            <div class="custom-padding">
+
+                    <nav>
+
+                        <div class="logo">CERTIFICATE  OF  COMPLETION </div>
+
+                        <ul class="menu-area">
+
+                            <li><a href="/login">Logout</a></li>
+
+                        </ul>
+
+                    </nav>
+
+                </div>
+
+                <div>
+                    <br>
+                    <p class="q">This certifies that <br><br><b>{{temp[0]}}</b><br><br> has successfully completed the course of <br><br><b id="q">THOUGHTCODE</b><br><br><span>A Computer science portal for beginners</span></p>
+                    <h3>Profile</h3>
+                    <span>Name : {{temp[0]}}</span>
+                     <span style="margin-left: 492px">Email : {{temp[1]}}</span><br><br>
+                    <span> Quiz1 marks : {{temp[3]}} </span>
+                    <span style="margin-left: 600px">Quiz2 marks : {{temp[4]}}</span><br><br>
+                    <span>Final quiz marks : {{r}}</span>
+                    <span style="margin-left: 544px">Total percentage : {{result}}%</span><br>
+                </div>
+
+       </body>
+
+</html>

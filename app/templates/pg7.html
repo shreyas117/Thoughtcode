@@ -1,0 +1,286 @@
+{% set i = 0 %}
+<!DOCTYPE html>
+<head>
+    <meta charset="utf -8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+        <style>
+            * {
+                
+                    margin:0;
+
+                    padding:0;
+
+                    -webkit-box-sizing: border-box;
+
+                    -moz-box-sizing: border-box;
+
+                    box-sizing: border-box;
+
+                    font-family: Palatino, "Palatino LT STD", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+            }
+            
+            body{
+                 -webkit-background-size:cover;
+
+                    background-position:center center;
+
+                    height:100vh;
+
+                    background:rgba(0,0,1,0.08);
+
+                    background-size:cover;
+                
+            }
+            
+            header{
+                
+                    text-decoration:none;
+
+                    color:#fff;
+
+                    letter-spacing:1px;
+
+                   
+
+                    display:block;
+
+                    margin-top: 8px;
+                margin-bottom: 10px;
+
+                    font-size:25px;
+
+                    height: 50px;
+
+                    position: relative;
+        
+                   
+                    z-index: 1;
+                text-align: center;
+                background-color: rgba(0,0,0,0.8);
+                word-spacing: 8px;
+                font-family: oblique;
+                font-variant: small-caps;
+
+            }
+            
+            header b{
+                font-size: 32px;
+               
+            }
+            header a{
+                color: beige;
+            }
+            article{
+             
+                    font-size:20px;
+
+                    padding:0 50px;
+               
+
+            }
+            li{
+              margin-left: 20px;
+                padding-top: 10px;
+                  font-size:20px;
+                word-spacing: 6px;
+                margin-bottom: 6px;
+            }
+            ul{
+                margin-left: 25px;
+                
+            }
+             b{
+                font-display: block;
+                font-size: 22px;
+            }
+            
+            footer{
+                 
+                    text-decoration:none;
+
+                    color:#fff;
+
+                    letter-spacing:1px;
+
+                    text-transform: uppercase;
+
+                    display:block;
+
+                   height: 44px;
+
+                    font-size:17px;
+
+                    line-height:30px;
+
+                    position: relative;
+
+                    z-index: 1;
+               
+                background-color: rgba(0,0,0,0.8);
+                margin-bottom: 8px;
+
+               
+            }
+            p{
+                font-size:20px;
+                word-spacing: 6px;
+
+                   
+
+            }
+            section{
+                background-color:lightgray;
+                
+            }
+            
+            button{
+                border: none;
+                color: aliceblue;
+                background-color: rgba(0,0,0,0.1);
+                margin-top: 4px;
+                
+                
+            }
+            a{
+                margin-right: 10px;
+                margin-top:5px
+            }
+            button:hover{
+                 background:rgba(0,0,0,1);
+
+                    color:#fff;
+
+            }
+            
+        </style>
+</head>
+<body>
+    <header>
+        <b>Functions in C++</b><a href="/profile7" style="color:blueviolet; text-decoration: none;float: right">{{ username }}</a>
+    </header>
+
+<article>
+
+
+
+<p>{{p['l'][i]}}{% set i = i+1 %} </p>
+<p>{{p['l'][i]}}{% set i = i+1 %}</p>
+<p><br />
+    
+    <!-- ----- -->
+    
+<strong>Example: </strong><br />
+Below is a simple C program to demonstrate functions in C. </p>
+
+// An example function that takes two parameters 'x' and 'y' <br>
+ // as input and returns max of two input numbers <br> <br>
+ <section>
+&nbsp;&nbsp;#include &lt;stdio.h> <br> <br>
+&nbsp;&nbsp;int max(int x,int y); <br>
+ {<br>
+   &nbsp;&nbsp; if (x > y)<br>
+   &nbsp;&nbsp;   return x;<br>
+   &nbsp;&nbsp; else<br>
+    &nbsp;&nbsp;  return y;<br>
+&nbsp;&nbsp;}<br><br>
+</section>
+// main function that doesn't receive any parameter and returns integer.<br> <br>
+<section>
+&nbsp;&nbsp;int main(void)<br>
+&nbsp;&nbsp;{<br>
+   &nbsp;&nbsp; int a = 10, b = 20;<br>
+    // Calling above function to find max of 'a' and 'b' <br>
+   &nbsp;&nbsp; int m = max(a, b);<br>
+&nbsp;&nbsp;	printf("m is %d", m);<br>
+	&nbsp;&nbsp;return 0;<br>
+}<br>
+
+</section>
+<p>Output: </p>
+<pre>m is 20</pre>
+
+    <!-- ---- -->
+            
+<strong>{{p['l'][i]}}{% set i = i+1 %}</strong><br />
+<p>{{p['l'][i]}}{% set i = i+1 %}</p>
+<p>{{p['l'][i]}}{% set i = i+1 %}</p>
+<p>{{p['l'][i]}}{% set i = i+1 %}</p>
+<strong>{{p['l'][i]}}{% set i = i+1 %}</strong><br /><p>
+    {{p['l'][i]}}{% set i = i+1 %}<br>
+    {{p['l'][i]}}{% set i = i+1 %}<br>
+    {{p['l'][i]}}{% set i = i+1 %}</p>
+<p><em><strong>{{p['l'][i]}}{% set i = i+1 %}</strong></em> {{p['l'][i]}}{% set i = i+1 %}</p>
+<p><em><strong>{{p['l'][i]}}{% set i = i+1 %}</strong></em>{{p['l'][i]}}{% set i = i+1 %}</p>
+<p>{{p['l'][i]}}{% set i = i+1 %} </p>
+    
+    <!-- ---- -->
+<section>
+#include &lt;stdio.h> <br><br>
+void fun(int x)<br>
+{<br>
+   x = 30;<br>
+}<br><br>
+int main()<br>
+{<br>
+    int x = 20;<br>
+    fun(x);<br>
+    printf("x = %d", x);<br>
+    return 0;<br>
+}<br>
+</section>
+<p>Output: </p>
+<pre>x = 20</pre>
+    
+    <!-- ---- -->
+    
+<p>{{p['l'][i]}}{% set i = i+1 %}</p>
+    
+    <!-- ---- -->
+ <section> 
+# include &lt;stdio.h> <br><br>
+void fun(int *ptr)<br>
+{<br>
+    *ptr = 30;<br>
+}<br><br>
+   
+int main()<br>
+{<br>
+  int x = 20;<br>
+  fun(&x);<br>
+  printf("x = %d", x);<br><br>
+   
+return 0;<br>
+}<br>
+
+</section>  
+
+<p>Output: </p>
+<pre>x = 30</pre>
+    
+    <!-- ---- -->
+    
+<strong>{{p['l'][i]}}{% set i = i+1 %}</strong><br />
+<ol>
+<li>{{p['l'][i]}}{% set i = i+1 %}</li>
+<li>{{p['l'][i]}}{% set i = i+1 %}</li>
+
+
+<li>{{p['l'][i]}}{% set i = i+1 %}</li>
+<li>{{p['l'][i]}}</li>
+</ol>
+</article>
+ <br>
+    <a href="https://www.onlinegdb.com/" target="_blank" style="text-decoration :none;float: right;font-size: 25px">Try it out</a><br><br>
+    
+    <footer>
+    
+            <form action="/pg7">
+            <button type="submit" style="float: right;font-size: 20px; height: 30px;margin-right:10px;">Next Page</button>
+            </form>
+
+            <form action="/pg7p">
+            <button type="submit" style="float: left;font-size: 20px; height: 30px;margin-left:10px;">Previous Page</button>
+            </form>
+        </footer>
+    </body>
+    </html>

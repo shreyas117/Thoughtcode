@@ -1,0 +1,309 @@
+{% set i = 0 %}
+<!DOCTYPE html>
+<head>
+    <meta charset="utf -8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+        <style>
+            * {
+                
+                    margin:0;
+
+                    padding:0;
+
+                    -webkit-box-sizing: border-box;
+
+                    -moz-box-sizing: border-box;
+
+                    box-sizing: border-box;
+
+                    font-family: Palatino, "Palatino LT STD", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+            }
+            
+            body{
+                 -webkit-background-size:cover;
+
+                    background-position:center center;
+
+                    height:100vh;
+
+                    background:rgba(0,0,1,0.08);
+
+                    background-size:cover;
+                
+            }
+            
+            header{
+                
+                    text-decoration:none;
+
+                    color:#fff;
+
+                    letter-spacing:1px;
+
+                   
+
+                    display:block;
+
+                    margin-top: 8px;
+                margin-bottom: 10px;
+
+                    font-size:25px;
+
+                    height: 50px;
+
+                    position: relative;
+        
+                   
+                    z-index: 1;
+                text-align: center;
+                background-color: rgba(0,0,0,0.8);
+                word-spacing: 8px;
+                font-family: oblique;
+                font-variant: small-caps;
+
+            }
+            
+            header b{
+                font-size: 32px;
+               
+            }
+            header a{
+                color: beige;
+            }
+            article{
+             
+                    font-size:20px;
+
+                    padding:0 50px;
+               
+
+            }
+            li{
+              margin-left: 20px;
+                padding-top: 10px;
+                  font-size:20px;
+                word-spacing: 6px;
+                margin-bottom: 6px;
+            }
+            ul{
+                margin-left: 25px;
+                
+            }
+             b{
+                font-display: block;
+                font-size: 22px;
+            }
+            
+            footer{
+                 
+                    text-decoration:none;
+
+                    color:#fff;
+
+                    letter-spacing:1px;
+
+                    text-transform: uppercase;
+
+                    display:block;
+
+                   height: 44px;
+
+                    font-size:17px;
+
+                    line-height:30px;
+
+                    position: relative;
+
+                    z-index: 1;
+               
+                background-color: rgba(0,0,0,0.8);
+                margin-bottom: 8px;
+
+               
+            }
+            p{
+                font-size:20px;
+                word-spacing: 6px;
+
+                   
+
+            }
+            section{
+                background-color:lightgray;
+                
+            }
+            
+            button{
+                border: none;
+                color: aliceblue;
+                background-color: rgba(0,0,0,0.1);
+                margin-top: 4px;
+                
+                
+            }
+            a{
+                margin-right: 10px;
+                margin-top:5px
+            }
+            button:hover{
+                 background:rgba(0,0,0,1);
+
+                    color:#fff;
+
+            }
+            
+        </style>
+</head>
+<body>
+    <header>
+        <b>Arrays in C/C++</b><a href="/profile6" style="color:blueviolet; text-decoration: none;float: right">{{ username }}</a>
+    </header>
+
+    <article>
+        <p>{{p['l'][i]}}{% set i=i+1 %}</p><br>
+        <img src="https://www.geeksforgeeks.org/wp-content/uploads/gq/2015/05/Arrays.png" alt="arrays" width="592" height="173" class="aligncenter size-full wp-image-28052"><br>
+        <strong>{{p['l'][i]}}{% set i=i+1 %}</strong><br>
+        <p>{{p['l'][i]}}{% set i=i+1 %}</p><br>
+        <strong>{{p['l'][i]}}{% set i=i+1 %}</strong><br>
+        <h5>{{p['l'][i]}}{% set i=i+1 %}</h5><br>
+        
+        
+        
+<!--example of array-->
+        
+        // Array declaration by specifying size<br> <br>
+int arr1[10];<br> <br>
+ 
+        With recent C/C++ versions, we can also
+ declare an array of user specified size <br><br>
+ 
+int n = 10;<br> 
+int arr2[n]; <br><br>
+Copy CodeRun on IDE<br>
+ Array declaration by initializing elements  
+ <br><br>
+int arr[] = {10, 20, 30, 40}<br> 
+  <br>
+ Compiler creates an array of size 4. 
+ above is same as  "int arr[4] = {10, 20, 30, 40}"<br>
+
+ Array declaration by specifying size and initializing<br>  
+int arr[6] = {10, 20, 30, 40}<br> 
+ Compiler creates an array of size 6, initializes first
+ 4 elements as specified by user and rest two elements as 0. 
+ above is same as  "int arr[] = {10, 20, 30, 40, 0, 0}" <br>
+        
+<!--example ends-->
+        
+        
+        
+        
+        <h5><strong>{{p['l'][i]}}{% set i=i+1 %}</strong></h5>
+        <p>{{p['l'][i]}}{% set i=i+1 %}</p>
+        
+        
+        
+<!--        example -->
+<section>
+        int main(){<br> 
+  int arr[5];<br> 
+  arr[0] = 5;<br> 
+  arr[2] = -10;<br> 
+  arr[3/2] = 2; // this is same as arr[1] = 2 <br>
+  arr[3] = arr[0];<br> 
+  
+  printf("%d %d %d %d", arr[0], arr[1], arr[2], arr[3]);<br> 
+  
+  return 0; }<br> 
+</section>
+<!--        end of example-->
+        
+        
+ <h5>output:</h5><br>
+5 2 -10 5<br>
+
+<h5><strong>{{p['l'][i]}}{% set i=i+1 %}</strong></h5><br>
+{{p['l'][i]}}{% set i=i+1 %}<br>
+
+<!--     -------    -->        
+This C program compiles fine as index out of bound 
+ is not checked in C. <br><br>
+ <section>
+int main(){<br>
+  int arr[2];<br> 
+  
+  printf("%d ", arr[3]);<br> 
+  printf("%d ", arr[-2]); <br>
+  
+  return 0;}<br>
+</section>
+        <!-- ----- -->
+    <p>{{p['l'][i]}}{% set i=i+1 %}</p><br>
+        <!--  ----  -->
+        <sectin>
+    int main(){<br>
+  
+  // Array declaration by initializing it with more
+   elements than specified size.<br> 
+  int arr[2] = {10, 20, 30, 40, 50};<br> 
+  
+  return 0;}<br>
+</sectin><br>
+        <!-- ---- -->
+        
+        <b>{{p['l'][i]}}{% set i=i+1 %}</b> {{p['l'][i]}}{% set i=i+1 %}<br>
+        <h5><strong>{{p['l'][i]}}{% set i=i+1 %}</strong></h5><br>
+        {{p['l'][i]}}{% set i=i+1 %}<br> 
+        <!-- ---- -->
+        <section>
+int main(){<br> 
+ //an array of 10 integers.  If arr[0] is stored at 
+   address x, then arr[1] is stored at x + sizeof(int) 
+   arr[2] is stored at x + sizeof(int) + sizeof(int)
+   and so on.<br> 
+  int arr[5], i;<br> 
+  
+  printf("Size of integer in this compiler is %u\n", sizeof(int));<br> 
+  
+  for (i=0; i<5; i++)<br> 
+    // The use of '&' before a variable name, yields
+ address of variable.<br> 
+    printf("Address arr[%d] is %u\n", i, &arr[i]); <br>
+  
+  return 0;}<br> 
+</section>
+Output:<br>
+Size of integer in this compiler is 4<br>
+Address arr[0] is 2686728<br>
+Address arr[1] is 2686732<br>
+Address arr[2] is 2686736<br>
+Address arr[3] is 2686740<br>
+Address arr[4] is 2686744 <br>
+        <!-- ---- -->
+        
+<strong>{{p['l'][i]}}{% set i=i+1 %}</strong> 
+{{p['l'][i]}}{% set i=i+1 %}<br>
+<h5><strong>{{p['l'][i]}}{% set i=i+1 %}</strong></h5>
+{{p['l'][i]}}{% set i=i+1 %}
+        
+        <li> {{p['l'][i]}}{% set i=i+1 %}</li>
+        <li>{{p['l'][i]}}{% set i=i+1 %}</li>
+        <li>{{p['l'][i]}}{% set i=i+1 %}</li>
+<li>{{p['l'][i]}}</li><br>       
+    </article>
+
+    <br>
+    <a href="https://www.onlinegdb.com/" target="_blank" style="text-decoration :none;float: right;font-size: 25px">Try it out</a><br><br>
+    
+    <footer>
+    
+            <form action="/qz2">
+            <button type="submit" style="float: right;font-size: 20px; height: 30px;margin-right: 10px">Take quiz 2</button>
+            </form>
+
+            <form action="/pg6p">
+            <button type="submit" style="float: left;font-size: 20px; height: 30px;margin-left: 10px">Previous Page</button>
+            </form>
+        </footer>
+    </body>
+    </html>
