@@ -18,35 +18,37 @@ def create_db():
 
     conn,cur = connect()
 
-    #cur.execute("CREATE TABLE user_info(UID integer primary key autoincrement,name varchar(50) NOT NULL,email varchar(50) NOT NULL,password varchar(20) NOT NULL);")
-    #cur.execute("CREATE TABLE prog_cnt(pid integer,progress integer NOT NULL,foreign key(pid) references user_info(UID));")
-    #cur.execute("CREATE TABLE indexno(id integer NOT NULL,path varchar(50) NOT NULL);")
-    #cur.execute("CREATE TABLE quize(qid integer,q1m integer NOT NULL,q2m integer NOT NULL,foreign key(qid) references user_info(UID));")
-    #cur.execute("INSERT INTO quize values(1,0,0);")
+    # cur.execute("CREATE TABLE user_info(UID integer primary key autoincrement,name varchar(50) NOT NULL,email varchar(50) NOT NULL,password varchar(20) NOT NULL);")
+    # cur.execute("CREATE TABLE prog_cnt(pid integer,progress integer NOT NULL,foreign key(pid) references user_info(UID));")
+    # cur.execute("CREATE TABLE indexno(id integer NOT NULL,path varchar(50) NOT NULL);")
+    # cur.execute("CREATE TABLE quize(qid integer,q1m integer NOT NULL,q2m integer NOT NULL,foreign key(qid) references user_info(UID));")
+    # cur.execute("INSERT INTO quize values(1,0,0);")
 
-    #----------------------------------------------------------------------------------------------
-    #--------------trigger function for quize and prog_cnt table---------------------------------------------------------------
-    #cur.execute("CREATE TRIGGER newquizprog AFTER INSERT ON user_info BEGIN INSERT INTO quize values(NEW.UID,0,0); INSERT INTO prog_cnt values(NEW.UID,0); END;")
+    # ----------------------------------------------------------------------------------------------
+    # --------------trigger function for quize and prog_cnt table---------------------------------------------------------------
+    # cur.execute("CREATE TRIGGER newquizprog AFTER INSERT ON user_info BEGIN INSERT INTO quize values(NEW.UID,0,0); INSERT INTO prog_cnt values(NEW.UID,0); END;")
     
     #-------------------view---------------------------------------------------------------------
-    #cur.execute("CREATE VIEW profile_view AS SELECT u.name as name,u.email as email,p.progress as progress,q.q1m as q1m,q.q2m as q2m FROM user_info u JOIN prog_cnt p ON u.UID=p.pid JOIN quize q on q.qid = u.UID;")
-    #cur.execute("DROP VIEW profile_view;")
-    #----------------------------------------------------------------------------------
-    #-----------------------Index-----------------------------------------------------
-    #cur.execute("CREATE INDEX email_index ON user_info(email);")
+    # cur.execute("CREATE VIEW profile_view AS SELECT u.name as name,u.email as email,p.progress as progress,q.q1m as q1m,q.q2m as q2m FROM user_info u JOIN prog_cnt p ON u.UID=p.pid JOIN quize q on q.qid = u.UID;")
+    # cur.execute("DROP VIEW profile_view;")
+    # ----------------------------------------------------------------------------------
+    # -----------------------Index-----------------------------------------------------
+    # cur.execute("CREATE INDEX email_index ON user_info(email);")
     #-------------------------path-----------------------------------------------------------
-    #cur.execute("CREATE INDEX path_index ON indexno(path);")
+    # cur.execute("CREATE INDEX path_index ON indexno(path);")
 
-    cur.execute("INSERT INTO indexno values(1,'Z://my project//json_files//book.txt');")
-    cur.execute("INSERT INTO indexno values(2,'Z://my project//json_files//book2.txt');")
-    cur.execute("INSERT INTO indexno values(3,'Z://my project//json_files//book3.txt');")
-    cur.execute("INSERT INTO indexno values(4,'Z://my project//json_files//book4.txt');")
-    cur.execute("INSERT INTO indexno values(5,'Z://my project//json_files//book5.txt');")
-    cur.execute("INSERT INTO indexno values(6,'Z://my project//json_files//book6.txt');")
-    cur.execute("INSERT INTO indexno values(7,'Z://my project//json_files//book7.txt');")
-    cur.execute("INSERT INTO indexno values(8,'Z://my project//json_files//book8.txt');")
-    cur.execute("INSERT INTO indexno values(9,'Z://my project//json_files//book9.txt');")
-    cur.execute("INSERT INTO indexno values(10,'Z://my project//json_files//book10.txt');")
+    cur.execute("INSERT INTO indexno values(1,'C://Users//dell//Desktop//Thoughtcode//Thoughtcode//json_filesbook.txt');")
+
+
+    cur.execute("INSERT INTO indexno values(2,'C://Users//dell//Desktop//Thoughtcode//Thoughtcode//json_filesbook2.txt');")
+    cur.execute("INSERT INTO indexno values(3,'C://Users//dell//Desktop//Thoughtcode//Thoughtcode//json_filesbook3.txt');")
+    cur.execute("INSERT INTO indexno values(4,'C://Users//dell//Desktop//Thoughtcode//Thoughtcode//json_filesbook4.txt');")
+    cur.execute("INSERT INTO indexno values(5,'C://Users//dell//Desktop//Thoughtcode//Thoughtcode//json_filesbook5.txt');")
+    cur.execute("INSERT INTO indexno values(6,'C://Users//dell//Desktop//Thoughtcode//Thoughtcode//json_filesbook6.txt');")
+    cur.execute("INSERT INTO indexno values(7,'C://Users//dell//Desktop//Thoughtcode//Thoughtcode//json_filesbook7.txt');")
+    cur.execute("INSERT INTO indexno values(8,'C://Users//dell//Desktop//Thoughtcode//Thoughtcode//json_filesbook8.txt');")
+    cur.execute("INSERT INTO indexno values(9,'C://Users//dell//Desktop//Thoughtcode//Thoughtcode//json_filesbook9.txt');")
+    cur.execute("INSERT INTO indexno values(10,'C://Users//dell//Desktop//Thoughtcode//Thoughtcode//json_filesbook10.txt');")
     
     conn.commit()
     conn.close()

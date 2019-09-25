@@ -27,6 +27,6 @@ p = {
 }
 import json
 s = json.dumps(p)
-with open ("Z://my project//json_files//book3.txt","w") as f:
+with open ("C://Users//dell//Desktop//Thoughtcode//Thoughtcode//json_filesbook3.txt","w") as f:
     f.write(s)
 
